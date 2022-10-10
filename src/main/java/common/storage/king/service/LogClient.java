@@ -17,7 +17,7 @@ import java.util.List;
  * @author haoran hou
  * @since 2022-09-19
  */
-@FeignClient(url = "${common.storage.king:127.0.0.1:8888}")
+@FeignClient(url = "${common.storage.king:127.0.0.1:8888}", name = "logClient")
 public interface LogClient{
 
     @PostMapping("/insertLogsStr")
